@@ -1,44 +1,54 @@
- {
+/* global */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+
+  background-color: #f4f4f4;
+
+  color: #333;
+
+  height: 100vh;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+
   margin: 0;
 
   padding: 0;
+}
 
-  box-sizing: border-box;
+img {
+  display: block;
+}
 
-  body {
-    font-family: Arial, sans-serif;
-
-    background-color: #f4f4f4;
-
-    color: #333;
-
-    height: 100vh;
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    text-align: center;
-  }
-
-  h1 {
-    font-size: 10em;
-
-    color: #004898;
-
-    margin-bottom: 20px;
-  }
-
-  p {
-    font-size: 5em;
-
-    line-height: 1.6;
-  }
-  .introduction {
-    transform: translateX(-100%);
-
-    transition: transform 1s ease-in-out;
-  }
+/* hero */
+.hero {
+  margin: 0;
+  width: 100%;
+}
+.hero-first {
+  width: 100%;
+  height: 816px;
+  background-image: url("./img/mountain.png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.hero-first-logo {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  z-index: 1;
 }
