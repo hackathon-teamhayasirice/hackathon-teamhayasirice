@@ -94,17 +94,17 @@ img {
   flex-direction: column;
   justify-content: center;
   gap: 48px;
-  z-index: 2;
+  z-index: 1;
 }
 .hero-second-title {
+  margin: 0;
   font-family: var(--font-family);
   color: var(--color-white);
   font-size: 32px;
-  z-index: 2;
 }
 .hero-second-texts {
+  margin: 0;
   font-family: var(--font-family);
   color: var(--color-white);
   font-size: 16px;
-  z-index: 2;
 }
