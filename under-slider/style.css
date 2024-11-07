@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+.page-around-title {
+  text-align: center;
+  font-family: "Shippori Mincho", serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 46px; /* 143.75% */
+}
+.autoplay {
+  width: 100%;
+}
+
+.slide-container {
+  position: relative;
+  margin: 0 10px;
+}
+
+.slick-slide {
+  margin-right: 36px !important; /* ここでスライド間隔を設定 */
+}
+
+.autoplay img {
+  width: 464px;
+  height: 288px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.text-box {
+  background: rgba(0, 0, 0, 0.42);
+  padding: 32px 80px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(2px);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: auto;
+  border-radius: 0 0 8px 8px;
+}
+
+.text-title {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+  font-family: "Shippori Mincho", serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.text-text {
+  color: #fff;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+  font-family: "Shippori Mincho", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
