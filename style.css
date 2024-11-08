@@ -226,12 +226,25 @@ img {
   gap: 24px;
   list-style: none;
 }
-.footer-logo:hover {
-  color: rgba(255, 255, 255, 0.7);
-}
-.footer-logo-about {
+.footer-logo-wrapper {
   width: 32px;
   height: 32px;
+  position: relative;
+  list-style: none;
+}
+.facebook-logo {
+  margin: 0;
+}
+.facebook-logo:hover {
+  opacity: 0;
+}
+.facebook-logo::after {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background: url(./img/facebook-logo-hover.svg);
+  /* list-style: none; */
 }
 .footer-info {
   font-size: 14px;
