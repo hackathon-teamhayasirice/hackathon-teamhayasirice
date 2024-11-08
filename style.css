@@ -227,12 +227,39 @@ img {
   list-style: none;
 }
 .footer-logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 32px;
   height: 32px;
+  display: inline-block;
   position: relative;
   list-style: none;
 }
-.facebook-logo {
+.footer-logo-wrapper img {
+  display: block;
+  margin: 0;
+}
+.footer-logo-wrapper:hover img {
+  opacity: 0;
+}
+.footer-logo-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("./img/facebook-logo-hover.svg");
+  opacity: 0;
+}
+.footer-logo-wrapper::after {
+  opacity: 1;
+}
+/* .footer-logo-wrapper:hover {
+  opacity: 0;
+} */
+/* .facebook-logo {
   margin: 0;
 }
 .facebook-logo:hover {
@@ -243,10 +270,15 @@ img {
   position: absolute;
   width: 32px;
   height: 32px;
+  margin: 0;
+  padding: 0;
   background: url(./img/facebook-logo-hover.svg);
   /* list-style: none; */
+/* } */
+.facebook-logo::after {
+  opacity: 1;
 }
-.footer-info {
+*/ .footer-info {
   font-size: 14px;
   text-align: center;
 }
