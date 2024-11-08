@@ -3,7 +3,14 @@ body {
   padding: 0;
   font-family: Arial, sans-serif;
 }
+.page-around {
+  padding: 0;
+  height: 570px;
+  width: 100%;
+  background: url(./img/kuraidairi.png) lightgray 50% / cover no-repeat;
+}
 .page-around-title {
+  padding-top: 48px;
   text-align: center;
   font-family: "Shippori Mincho", serif;
   font-size: 32px;
@@ -64,4 +71,13 @@ body {
   font-weight: 400;
   line-height: 24px;
   text-align: center;
+}
+.slick-dots li button:before {
+  font-size: 12px !important;
+}
+.slick-dots li {
+  width: 24px !important;
+}
+.slick-dots {
+  bottom: -48px !important;
 }
