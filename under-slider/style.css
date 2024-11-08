@@ -7,7 +7,7 @@ body {
   padding: 0;
   height: 570px;
   width: 100%;
-  background: url(./img/kuraidairi.png) lightgray 50% / cover no-repeat;
+  background: url(./img/kuraidairi.png);
 }
 .page-around-title {
   padding-top: 48px;
@@ -60,6 +60,7 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
+  margin: 0 0 12px 0;
 }
 
 .text-text {
@@ -70,14 +71,46 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+  margin: 0;
   text-align: center;
 }
-.slick-dots li button:before {
-  font-size: 12px !important;
+.slick-dots {
+  bottom: -42px;
 }
 .slick-dots li {
-  width: 24px !important;
+  margin-right: 24px;
+  width: fit-content;
+  height: fit-content;
 }
-.slick-dots {
-  bottom: -48px !important;
+.slick-dots li button {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(2px);
+}
+.slick-dots li button:before {
+  width: 12px;
+  height: 12px;
+  font-size: 14px;
+  top: -3px;
+  left: -1px;
+}
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #111111;
+}
+
+.slick-dots li:not(.slick-active) button:before {
+  opacity: 1;
+  color: rgba(0, 0, 0, 0.4);
+}
+.carousel1-position {
+  position: relative;
+}
+
+.slick-dots li:not(.slick-active) button:before {
+  opacity: 1;
+  color: rgba(0, 0, 0, 0.4);
 }
