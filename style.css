@@ -2,6 +2,7 @@
   --font-family: "Shippori Mincho", sans-serif;
   --color-white: #ffffff;
   --color-footer-background: #d7e1dc;
+  --color-blur: rgba(255, 255, 255, 0.1);
 }
 
 /* global */
@@ -68,12 +69,23 @@ img {
   height: 40px;
 }
 .header-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--color-white);
   margin: 0;
   padding: 9px 16px;
   width: 100%;
   font-size: 16px;
   text-decoration: none;
+}
+.header-link:hover {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  margin: 0;
+  border-radius: 100px;
+  background: var(--color-blur);
 }
 .header-button {
   font-size: 16px;
@@ -87,6 +99,15 @@ img {
   align-items: center;
   text-decoration: none;
   border: 0.5px solid #ffffff;
+}
+.header-button:hover {
+  display: flex;
+  width: 185px;
+  /* height: 40px; */
+  height: 100%;
+  margin: 0;
+  border-radius: 100px;
+  background: var(--color-blur);
 }
 
 /* hero */
