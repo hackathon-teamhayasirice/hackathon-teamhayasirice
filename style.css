@@ -51,6 +51,9 @@ img {
   color: var(--color-white);
   font-size: 20px;
 }
+.header-title:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
 .header-wrapper {
   display: flex;
   width: 100%;
