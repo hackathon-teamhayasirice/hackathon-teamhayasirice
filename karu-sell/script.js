@@ -5,6 +5,6 @@ $(document).ready(function () {
     centerMode: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    centerPadding: "9%",
+    centerPadding: "6.75%",
   });
 });
