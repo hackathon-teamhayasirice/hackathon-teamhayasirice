@@ -3,6 +3,7 @@
   --color-white: #ffffff;
   --color-footer-background: #d7e1dc;
   --color-blur: rgba(255, 255, 255, 0.1);
+  --color-black: #111;
 }
 
 /* global */
@@ -92,7 +93,7 @@ body {
   color: var(--color-white);
   display: flex;
   width: 185px;
-  height:40px;
+  height: 40px;
   padding: 8px 12px;
   margin: 0;
   border-radius: 100px;
@@ -109,11 +110,6 @@ body {
   border-radius: 100px;
   background: var(--color-blur);
 }
-
-
-
-
-
 
 /* 見出しとおじいちゃん */
 .hero {
@@ -183,7 +179,6 @@ body {
   line-height: 24px;
 }
 
-
 /* 選べる4つのコース */
 
 /* お食事 */
@@ -191,92 +186,135 @@ body {
 /* お部屋 */
 
 /* Q&A */
-
-/* アクセス */
-.access{
-  display:flex;
+.QA {
+  display: flex;
+  width: 100%;
+  height: 730px;
+  padding: 48px 100px 80px 100px;
   flex-direction: column;
   align-items: center;
-  gap:60px;
-  padding:48px 100px 80px;
-  background-image: url('img/access-maincontents-background.png');
+  gap: 60px;
+  background-image: url("./img/QA-background.png");
+  background-size: cover;
+}
+.QA-title {
+  color: var(--color-black);
+  font-family: var(--font-family);
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+  margin: 0;
+}
+.QA-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+.QA-contents {
+  display: flex;
+  padding: 20px 32px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+  border-top: 1px solid #ddd;
+}
+.QA-texts {
+  align-self: stretch;
+  color: var(--color-black);
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+}
+
+/* アクセス */
+.access {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  padding: 48px 100px 80px;
+  background-image: url("img/access-maincontents-background.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.access-headline{
+.access-headline {
   font-size: 32px;
   font-weight: 400;
   line-height: 46px;
 }
 
-.access-contents-container{
+.access-contents-container {
   display: flex;
-  gap:32px;
+  gap: 32px;
 }
 
 #map {
-  width:534px;
-  height:534px;
+  width: 534px;
+  height: 534px;
 }
 
-.access-explanation-container{
+.access-explanation-container {
   display: flex;
-  flex:1;
+  flex: 1;
   flex-direction: column;
-  gap:32px;
+  gap: 32px;
 }
 
-.access-explanation-contents-container{
+.access-explanation-contents-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap:20px;
+  gap: 20px;
 }
 
-.access-explanation-headline{
+.access-explanation-headline {
   font-size: 24px;
   font-weight: 400;
   line-height: 34px;
-  margin:0;
+  margin: 0;
 }
 
-.access-address-contents{
+.access-address-contents {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  margin:0;
+  margin: 0;
 }
 
-.access-method-contents{
+.access-method-contents {
   display: flex;
-  gap:24px;
+  gap: 24px;
 }
 
-.access-method-subheadline{
-  color: #FFF;
+.access-method-subheadline {
+  color: #fff;
   text-align: center;
-  padding:24px 12px;
-  background:rgba(0, 0, 0, 0.50);
+  padding: 24px 12px;
+  background: rgba(0, 0, 0, 0.5);
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  width:136px;
-  height:96px;
+  width: 136px;
+  height: 96px;
 }
 
-.access-method-sentence{
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px; 
-  flex:1;
-}
-
-.access-time-contents{
+.access-method-sentence {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  margin:0;
+  flex: 1;
+}
+
+.access-time-contents {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
 }
 /* 周辺観光 */
 
@@ -323,7 +361,7 @@ body {
   align-items: center;
   gap: 24px;
   list-style: none;
-  margin:32px 0;
+  margin: 32px 0;
 }
 .footer-logo-wrapper {
   display: flex;
@@ -336,12 +374,12 @@ body {
   list-style: none;
 }
 
-.footer-icon:hover{
-  opacity:0.6;
+.footer-icon:hover {
+  opacity: 0.6;
 }
 
- .footer-info {
+.footer-info {
   font-size: 14px;
   text-align: center;
-  margin:0;
+  margin: 0;
 }
