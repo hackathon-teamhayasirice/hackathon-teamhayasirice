@@ -2,7 +2,16 @@
 // gsap.registerPlugin(ScrollTrigger);
 
 // 選べる4つのコース
-
+$(document).ready(function () {
+  $(".center").slick({
+    dots: true,
+    infinite: true,
+    centerMode: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerPadding: "6.75%",
+  });
+});
 // お食事
 
 // お部屋
