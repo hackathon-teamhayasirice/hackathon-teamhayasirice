@@ -11,6 +11,12 @@
       href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
   </head>
 
   <body>
@@ -53,6 +59,46 @@
       </div>
     </section>
 
+<!-- 選べる4つのコース -->
+
+<!-- お食事 -->
+
+<!-- お部屋 -->
+
+<!-- Q&A -->
+
+<!-- アクセス -->
+<section class="access">
+  <div class="access-headline">アクセス</div>
+  <div class="access-contents-container">
+      <div id="map"></div> 
+      <div class="access-explanation-container">
+          <div class="access-explanation-contents-container">
+              <h4 class="access-explanation-headline">施設所在地</h4>
+              <p class="access-address-contents">〒389-0102 長野県北佐久郡軽井沢町大字軽井沢1-23-45</p>
+          </div>
+          <div class="access-explanation-contents-container">
+              <h4 class="access-explanation-headline">アクセス方法</h4>
+              <div class="access-method-contents">
+                  <div class="access-method-subheadline">公共交通機関を<br/>ご利用の場合</div> 
+                  <div class="access-method-sentence">最寄り駅「軽井沢駅」から専用シャトルバスが運行しています（所要時間約20分）。シャトルバスは駅北口のバス停から毎時00分と30分に出発し、予約は不要です。</div>   
+              </div>
+              <div class="access-method-contents">
+                  <div class="access-method-subheadline">お車を<br/>ご利用の場合</div> 
+                  <div class="access-method-sentence">駐車場（要予約）をご用意しています。施設最寄りの「碓氷軽井沢インターチェンジ」から約30分でアクセス可能です。駐車場の予約は、お電話またはウェブサイトより承ります。</div>   
+              </div>
+          </div>
+          <div class="access-explanation-contents-container">
+              <h4 class="access-explanation-headline">所要時間</h4>
+              <p class="access-time-contents">
+                  東京から：お車で約2時間30分、電車とシャトルバスで約2時間<br/>
+                  名古屋から：お車で約3時間30分、電車とシャトルバスで約3時間<br/>
+                  大阪から：お車で約5時間、電車とシャトルバスで約4時間<br/></p>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- 周辺観光 -->
 
 <!-- footer -->
     <footer class="footer">
@@ -95,7 +141,7 @@
       </ul>
       <p class="footer-info">©2024 Kare-naru Hayashi, Inc.</p>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
