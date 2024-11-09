@@ -5,15 +5,13 @@ const triggerElement = ".two-card-container";
 
 // 中央位置を計算
 const centerX = window.innerWidth / 2;
-
+const imgTextContainer = document.querySelector(".room-image-text-container1");
+const imgTextContainer1Width = imgTextContainer.offsetWidth;
 // room-image-text-container1を中央から左に出現させる
 gsap.fromTo(
   ".room-image-text-container1",
   {
-    x: () => {
-      const element = document.querySelector(".two-card-container");
-      return centerX - element.offsetWidth / 2;
-    },
+    x: imgTextContainer1Width / 2 + 60,
     opacity: 0,
   },
   {
@@ -30,10 +28,7 @@ gsap.fromTo(
 gsap.fromTo(
   ".room-image-text-container2",
   {
-    x: () => {
-      const element = document.querySelector(".two-card-container");
-      return -(centerX - element.offsetWidth / 2);
-    },
+    x: -(imgTextContainer1Width / 2 + 60),
     opacity: 0,
   },
   {
