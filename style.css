@@ -15,10 +15,6 @@
 
 body {
   font-family: var(--font-family);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin: 0;
   padding: 0;
 }
@@ -181,6 +177,185 @@ body {
 
 /* 選べる4つのコース */
 
+.carousel1-background {
+  background-image: url("img/dairiseki.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh;
+  padding-top: 48px;
+}
+
+.carousel1-title {
+  color: #111;
+  font-family: "Shippori Mincho";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 46px;
+  text-align: center;
+  margin: 0 0 36px;
+}
+
+.slider {
+  width: 100%;
+}
+
+.slick-slide {
+  margin: 0px 54px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-prev:before {
+  content: "";
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background-image: url("img/prev.svg");
+}
+
+.slick-next:before {
+  content: "";
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background-image: url("img/next.svg");
+}
+
+.slick-slide {
+  transition: all ease-in-out 0.3s;
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+}
+
+.slick-prev {
+  left: 4.3%;
+}
+
+.slick-next {
+  right: 4.3%;
+}
+.slick-track {
+  padding: 24px 0;
+}
+.slick-dots {
+  bottom: -18px;
+}
+.slick-dots li {
+  margin: 0 12px;
+  width: fit-content;
+  height: fit-content;
+}
+.slick-dots li button {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(2px);
+}
+.slick-dots li button:before {
+  width: 12px;
+  height: 12px;
+  font-size: 14px;
+  top: -3px;
+  left: -1px;
+}
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #111111;
+}
+
+.slick-dots li:not(.slick-active) button:before {
+  opacity: 1;
+  color: rgba(0, 0, 0, 0.4);
+}
+.carousel1-position {
+  position: relative;
+}
+.carousel1-on-img-container {
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  top: 57.5px;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 72px;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Shippori Mincho";
+  color: #fff;
+  @media screen and (max-width: 1200px) {
+    gap: 36px;
+    width: 70%;
+  }
+}
+
+.carousel1-header {
+  margin: 0;
+  padding: 0;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 46px;
+}
+
+.carousel1-phrase {
+  margin: 0;
+  padding: 0;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.carousel1-button {
+  display: flex;
+  color: #fff;
+  width: 160px;
+  height: 42px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 0.5px solid rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.carousel1-button:hover {
+  border-radius: 5px;
+  border: 0.5px solid rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  border: 0.5px solid rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(2px);
+}
+
+.carousel1-img {
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(
+    283deg,
+    rgba(0, 0, 0, 0.5) 41.92%,
+    rgba(0, 0, 0, 0.4) 91.19%
+  );
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(2px);
+}
+
 /* お食事 */
 
 /* お部屋 */
@@ -319,30 +494,30 @@ body {
 /* 周辺観光 */
 
 /* カレンダー */
-.calender{
+.calender {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap:32px;
+  gap: 32px;
   padding: 48px 0 134px;
-  background-image: url('img/calender-background.png');
+  background-image: url("img/calender-background.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.calender-headline{
+.calender-headline {
   font-size: 32px;
   font-weight: 400;
   line-height: 46px;
-  margin:0;
+  margin: 0;
 }
-.calender-paragraph{
+.calender-paragraph {
   text-align: center;
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
-  margin:0;
+  margin: 0;
 }
 
 /* カレンダーのサイズを設定 */
@@ -354,78 +529,79 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 700px;
-  background:#fff;
-  margin:0;
+  background: #fff;
+  margin: 0;
 }
-
 
 /* カレンダーのヘッダー部分 */
 /* 先月来月ボタン */
-.fc .fc-button-primary{
-  background: rgba(5, 65, 41, 0.70);
-  border:none;
+.fc .fc-button-primary {
+  background: rgba(5, 65, 41, 0.7);
+  border: none;
 }
-.fc .fc-button-primary:hover{
+.fc .fc-button-primary:hover {
   background: rgba(5, 65, 41, 1);
 }
-.fc .fc-button-primary:focus, .fc .fc-button-primary:not(:disabled).fc-button-active:focus, .fc .fc-button-primary:not(:disabled):active:focus{
+.fc .fc-button-primary:focus,
+.fc .fc-button-primary:not(:disabled).fc-button-active:focus,
+.fc .fc-button-primary:not(:disabled):active:focus {
   box-shadow: none;
 }
-.fc .fc-button-primary:focus{
+.fc .fc-button-primary:focus {
   box-shadow: none;
 }
-.fc .fc-button:focus{
+.fc .fc-button:focus {
   box-shadow: none;
 }
 
 /* コンテンツのヘッダー */
-.fc-toolbar-title{
+.fc-toolbar-title {
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
 }
-.fc-scrollgrid-sync-inner{
+.fc-scrollgrid-sync-inner {
   font-family: Inter;
   color: #666;
   font-size: 12px;
   font-weight: 400;
 }
-.fc .fc-col-header-cell-cushion{
-  padding:8.5px 0;
+.fc .fc-col-header-cell-cushion {
+  padding: 8.5px 0;
 }
 
 /* コンテンツの日にちそれぞれ */
-.fc .fc-daygrid-day-number{
-  padding:8px;
+.fc .fc-daygrid-day-number {
+  padding: 8px;
 }
-.fc-h-event{
-  background:transparent;
-  border:none;
+.fc-h-event {
+  background: transparent;
+  border: none;
 }
 
 .fc-event-title-container {
   display: flex;
-  align-items: center;  /* 子要素の上下中央揃え */
-  padding: 2px 6px ;  /* 左右のpadding */
+  align-items: center;
+  padding: 2px 6px;
 }
 
 .fc-event-text {
-  color: #000;  /* 黒色テキスト */
+  color: #000;
   font-family: "Shippori Mincho";
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px;  /* 行間 */
-  flex: 1;  /* 空きスペースを占有 */
+  line-height: 20px;
+  flex: 1;
 }
 
 .fc-event-icon {
   width: 24px;
   height: 24px;
   border-radius: 4px;
-  background: #BEBEBE;
+  background: #bebebe;
   display: flex;
-  align-items: center;  /* 中央揃え */
+  align-items: center;
   justify-content: center;
   font-size: 14px;
   color: #111;
@@ -435,8 +611,8 @@ body {
   display: none;
 }
 
-.fc .fc-daygrid-body-natural .fc-daygrid-day-events{
-  margin-bottom:4px;
+.fc .fc-daygrid-body-natural .fc-daygrid-day-events {
+  margin-bottom: 4px;
 }
 
 .fc .fc-daygrid-day.fc-day-today {
