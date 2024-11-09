@@ -13,8 +13,88 @@ $(document).ready(function () {
   });
 });
 // お食事
+gsap.registerPlugin(ScrollTrigger);
+
+// 共通のトリガー要素を設定
+const triggerElement1 = ".meal-page-dev";
+
+// meal-image-text-container1を左からスライドイン
+gsap.fromTo(
+  ".meal-image-text-container1",
+  {
+    x: -window.innerWidth, // 画面の左端からスタート
+    opacity: 0,
+  },
+  {
+    x: 0, // 元の位置に移動
+    opacity: 1,
+    duration: 2,
+    scrollTrigger: {
+      trigger: triggerElement1,
+    },
+  }
+);
+
+// meal-image-text-container2を右からスライドイン
+gsap.fromTo(
+  ".meal-image-text-container2",
+  {
+    x: window.innerWidth, // 画面の右端からスタート
+    opacity: 0, // 初期状態は透明
+  },
+  {
+    x: 0, // 元の位置に移動
+    opacity: 1, // 不透明に
+    duration: 2,
+    scrollTrigger: {
+      trigger: triggerElement1,
+    },
+  }
+);
 
 // お部屋
+gsap.registerPlugin(ScrollTrigger);
+
+// 共通のトリガー要素を設定
+const triggerElement2 = ".two-card-container";
+
+// 中央位置を計算
+const centerX = window.innerWidth / 2;
+const imgTextContainer = document.querySelector(".room-image-text-container1");
+const imgTextContainer1Width = imgTextContainer.offsetWidth;
+// room-image-text-container1を中央から左に出現させる
+gsap.fromTo(
+  ".room-image-text-container1",
+  {
+    x: imgTextContainer1Width / 2 + 60,
+    opacity: 0,
+  },
+  {
+    x: 0,
+    opacity: 1,
+    duration: 2,
+    scrollTrigger: {
+      trigger: triggerElement2,
+    },
+  }
+);
+
+// room-image-text-container2を中央から右に出現させる
+gsap.fromTo(
+  ".room-image-text-container2",
+  {
+    x: -(imgTextContainer1Width / 2 + 60),
+    opacity: 0,
+  },
+  {
+    x: 0,
+    opacity: 1,
+    duration: 2,
+    scrollTrigger: {
+      trigger: triggerElement2,
+    },
+  }
+);
 
 // アクセス
 window.onload = () => {
@@ -38,6 +118,21 @@ window.onload = () => {
   // マーカーにポップアップを追加
   marker.bindPopup("HAYASHI GRAMPING").openPopup();
 };
+//周辺観光
+$(document).ready(function () {
+  $(".autoplay").slick({
+    slidesToShow: 3, // 1回に表示するスライド数
+    slidesToScroll: 1, // 1回にスクロールするスライド数
+    autoplay: true, // 自動再生
+    autoplaySpeed: 1000, // 自動再生のスピード
+    infinite: true, // 無限ループ
+    centerMode: true, // 中央配置を有効にす
+    variableWidth: true, // スライドの幅を可変にする
+    dots: true, // ドットナビゲーション
+    focusOnSelect: true, // スライドをクリックで選択
+    gap: 100, // スライド間のスペースを調整するオプション
+  });
+});
 
 // カレンダー
 document.addEventListener("DOMContentLoaded", function () {

@@ -388,9 +388,68 @@
     </div>
 
     <!-- お食事 -->
-
+    <ul class="meal-page-dev">
+      <div class="meal-page-dev-title">お食事</div>
+      <div class="meal-image-text-container1">
+        <img src="./img/ninzin.png" class="meal-image" />
+        <div class="meal-text-container1">
+          <h2 class="meal-text-subsection">季節の食材を使用しています</h2>
+          <p class="meal-text">
+            当施設では、食材にこだわりを持ち、提供するすべての料理に有機野菜と季節の新鮮な野菜を使用しています。自然の恵みを感じられるよう、健康に配慮した食材を厳選し、体に優しい料理をご提供いたします。
+          </p>
+        </div>
+      </div>
+      <div class="meal-image-text-container2">
+        <div class="meal-text-container2">
+          <h2 class="meal-text-subsection">お食事のご案内</h2>
+          <p class="meal-text">
+            ご希望に応じて朝食・昼食・夕食をご注文いただけ、メニューは和食と洋食からお好みに合わせてお選びいただけます。キャンプのひとときがさらに豊かなものとなるよう、専用のBBQセットもご用意しておりますので、大自然の中でお好きなスタイルのお食事をお楽しみください。
+          </p>
+        </div>
+        <img src="./img/meal.png" class="meal-image" />
+      </div>
+      <button class="detail-button">詳細を見る</button>
+    </ul>
     <!-- お部屋 -->
-
+    <ul class="room-page-dev">
+      <div class="room-page-dev-title">お部屋</div>
+      <div class="two-card-container">
+        <div class="room-image-text-container1">
+          <img src="./img/roomleft.png" class="room-image" />
+          <div class="room-text-container">
+            <p class="room-text-subsection">
+              ~4名様<br />
+              35,000円/一部屋・泊
+            </p>
+            <p class="room-text">
+              少人数でのご滞在に最適なプライベート空間です。<br />
+              自然の中で快適なベッドやくつろぎのインテリアに<br />
+              包まれ、リラックスした時間をお楽しみいただけま<br />
+              す。タオル、シャンプー、Wi-Fiに加え、BBQセット<br />
+              も完備しております。
+            </p>
+          </div>
+        </div>
+        <div class="white-bar"></div>
+        <div class="room-image-text-container2">
+          <div class="room-text-container">
+            <img src="./img/roomright.png" class="room-image" />
+            <p class="room-text-subsection">
+              ~6名様<br />
+              45,000円/一部屋・泊
+            </p>
+            <p class="room-text">
+              グループやファミリーにぴったりの広々としたス<br />
+              ペースです。専用BBQスペースやリビングエリアが<br />
+              あり、自然の中で贅沢なご体験を提供いたします。<br />
+              タオル、シャンプー、Wi-Fiに加え、BBQセットも完<br />
+              備しております。
+            </p>
+          </div>
+        </div>
+      </div>
+      <button class="detail-button">詳細を見る</button>
+    </ul>
     <!-- Q&A -->
     <section class="QA">
       <p class="QA-title">Q&A</p>
@@ -469,7 +528,43 @@
       </div>
     </section>
     <!-- 周辺観光 -->
-
+    <ul class="page-around">
+      <h2 class="page-around-title">周辺観光</h2>
+      <div class="autoplay">
+        <div class="slide-container">
+          <img src="./img/himawari.png" alt="Image 1" />
+          <div class="text-box">
+            <p class="text-title">黄金の丘</p>
+            <p class="text-text">緩やかな丘一面が金色に染まる、広大で</br>
+            美しいひまわり畑</p>
+          </div>
+        </div>
+        <div class="slide-container">
+          <img src="./img/taki.png" alt="Image 2" />
+          <div class="text-box">
+            <p class="text-title">風音の滝</p>
+            <p class="text-text">風に乗ってささやくように流れる、心を</br>
+            癒す涼やかな滝</p>
+          </div>
+        </div>
+        <div class="slide-container">
+          <img src="./img/shounyudou.png" alt="Image 3" />
+          <div class="text-box">
+            <p class="text-title">月影洞窟</p>
+            <p class="text-text">千年を超える歳月が作り出した、壮大で</br>
+            幻想的な鍾乳洞</p>
+          </div>
+        </div>
+        <div class="slide-container">
+          <img src="./img/yumemi.png" alt="Image 4" />
+          <div class="text-box">
+            <p class="text-title">ゆめの実カフェ</p>
+            <p class="text-text">地元産の新鮮な果物を使ったスイーツが</br>
+            人気の、ほっこりカフェ</p>
+          </div>
+        </div>
+      </div>
+  </ul>
     <!-- カレンダー -->
     <section class="calender">
       <h2 class="calender-headline">ご予約状況</h2>
@@ -542,6 +637,7 @@
       charset="utf-8"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
     <script src="./script.js"></script>
   </body>
