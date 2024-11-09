@@ -16,7 +16,7 @@ $(document).ready(function () {
 gsap.registerPlugin(ScrollTrigger);
 
 // 共通のトリガー要素を設定
-const triggerElement = ".meal-page-dev";
+const triggerElement1 = ".meal-page-dev";
 
 // meal-image-text-container1を左からスライドイン
 gsap.fromTo(
@@ -30,7 +30,7 @@ gsap.fromTo(
     opacity: 1,
     duration: 2,
     scrollTrigger: {
-      trigger: triggerElement,
+      trigger: triggerElement1,
     },
   }
 );
@@ -47,12 +47,54 @@ gsap.fromTo(
     opacity: 1, // 不透明に
     duration: 2,
     scrollTrigger: {
-      trigger: triggerElement,
+      trigger: triggerElement1,
     },
   }
 );
 
 // お部屋
+gsap.registerPlugin(ScrollTrigger);
+
+// 共通のトリガー要素を設定
+const triggerElement2 = ".two-card-container";
+
+// 中央位置を計算
+const centerX = window.innerWidth / 2;
+const imgTextContainer = document.querySelector(".room-image-text-container1");
+const imgTextContainer1Width = imgTextContainer.offsetWidth;
+// room-image-text-container1を中央から左に出現させる
+gsap.fromTo(
+  ".room-image-text-container1",
+  {
+    x: imgTextContainer1Width / 2 + 60,
+    opacity: 0,
+  },
+  {
+    x: 0,
+    opacity: 1,
+    duration: 2,
+    scrollTrigger: {
+      trigger: triggerElement2,
+    },
+  }
+);
+
+// room-image-text-container2を中央から右に出現させる
+gsap.fromTo(
+  ".room-image-text-container2",
+  {
+    x: -(imgTextContainer1Width / 2 + 60),
+    opacity: 0,
+  },
+  {
+    x: 0,
+    opacity: 1,
+    duration: 2,
+    scrollTrigger: {
+      trigger: triggerElement2,
+    },
+  }
+);
 
 // アクセス
 window.onload = () => {
