@@ -122,6 +122,10 @@ body {
   align-items: center;
   font-family: "Shippori Mincho";
   color: #fff;
+  @media screen and (max-width: 1200px) {
+    gap: 36px;
+    width: 70%;
+  }
 }
 
 .carousel1-header {
