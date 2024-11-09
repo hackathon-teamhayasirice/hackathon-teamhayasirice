@@ -1,6 +1,3 @@
-// ↓使用していないとエラーになるのでコメントアウト
-// gsap.registerPlugin(ScrollTrigger);
-
 // 選べる4つのコース
 $(document).ready(function () {
   $(".center").slick({
