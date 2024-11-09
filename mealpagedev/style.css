@@ -9,7 +9,7 @@
   align-items: center;
   flex-direction: column; /* 縦に並べる場合 */
   margin: 0;
-  padding: 0 102px;
+  padding: 0;
 }
 .meal-page-dev-title {
   margin-top: 48px;
@@ -23,13 +23,13 @@
   line-height: 46px; /* 143.75% */
 }
 .meal-image-text-container1 {
-  width: 84%;
+  width: 79%;
   display: flex;
   justify-content: center;
   margin: 60px 0 27px 0;
 }
 .meal-image-text-container2 {
-  width: 84%;
+  width: 79%;
   display: flex;
   justify-content: center;
   margin: 27px 0 60px 0;
@@ -49,7 +49,7 @@
 }
 .meal-text-container2 {
   display: flex;
-  margin-right: 48px;
+  margin-right: 40px;
   padding: 32px 0px;
   flex-direction: column;
   align-items: center;
