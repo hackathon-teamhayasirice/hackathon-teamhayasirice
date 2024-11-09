@@ -269,6 +269,11 @@ body {
 .course-explanation-paragraph{
   margin:0;
 }
+.course-explanation-key-container{
+  width:140px; 
+  display: flex; 
+  gap:4px;
+}
 .course-explanation-key{
   margin:0;
   white-space: nowrap;
