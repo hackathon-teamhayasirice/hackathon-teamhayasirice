@@ -22,7 +22,7 @@ body {
   padding: 0;
 }
 
-/* header */
+/* ヘッダー */
 .header {
   display: flex;
   justify-content: space-between;
@@ -110,36 +110,15 @@ body {
   background: var(--color-blur);
 }
 
-
-
-
-
-
-/* 見出しとおじいちゃん */
-.hero {
-  width: 100%;
-}
-.hero-first {
-  width: 100%;
-  height: 100vh;
-  background-image: url("./img/mountain.png");
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relatived;
-}
-.hero-first-logo {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  z-index: 1;
+.food-headline{
+  width:100%;
 }
 
+/* 見出し */
 .hero-second {
   width: 100%;
-  height: 567px;
-  background-image: url("./img/lake.png");
+  height: 632px;
+  background-image: url("./img/food-headline.png");
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -184,6 +163,143 @@ body {
 }
 
 
+
+
+.food-main-content-container{
+    padding:48px 100px 80px;
+}
+
+/* パンくずリスト */
+.breadcrumb {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px; 
+    display: flex;
+    flex-direction: row;
+  }
+
+  .breadcrumb li{
+    margin:0 8px;
+  }
+  
+  .breadcrumb li a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .breadcrumb li a:hover {
+    text-decoration: none;
+  }
+
+.food-main-content-container{
+    background-image: url('img/maincontents-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  
+ /* コンテンツの中身  */
+  .food-contents-container{
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    gap:60px;
+    padding-top: 60px;
+  }
+
+  .food-headline{
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 46px;
+    margin:0;
+  }
+
+
+
+  /* 記事 */
+  .food-article{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  /* 記事の見出し */
+  .food-subheadline-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+  }
+  .food-subheadline{
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 46px;
+    margin:0;
+    margin:15px 0;
+  }
+  .food-price{
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 34px;
+  }
+  .underline{
+    width:100%;
+    height:1px;
+    background:#000;
+  }
+
+.food-one-sentence{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    margin:0;
+}
+
+.food-explanation-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-right:20px;
+}
+
+.food-explanation{
+    display:flex;
+    align-items: center;
+    gap:60px;
+}
+
+.food-explanation-img{
+    border-radius: 16px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2px);
+}
+
+.food-explanation-paragraph-container{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.food-explanation-sentence{
+    margin:0;
+}
+
+.food-explanation-list{
+    margin:0;
+    padding:0;
+}
+.food-explanation-listitem{
+    list-style-type: none;
+}
 
 
 /* footer */
