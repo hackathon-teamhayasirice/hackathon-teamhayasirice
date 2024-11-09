@@ -8,15 +8,14 @@ gsap.fromTo(
   ".meal-image-text-container1",
   {
     x: -window.innerWidth, // 画面の左端からスタート
+    opacity: 0,
   },
   {
     x: 0, // 元の位置に移動
-    duration: 3,
+    opacity: 1,
+    duration: 2,
     scrollTrigger: {
       trigger: triggerElement,
-      start: "top 80%", // ビューポートの80%の位置で開始
-      end: "top 20%", // ビューポートの20%の位置で終了
-      scrub: 1, // スクロールに合わせてアニメーションを調整
     },
   }
 );
@@ -31,12 +30,9 @@ gsap.fromTo(
   {
     x: 0, // 元の位置に移動
     opacity: 1, // 不透明に
-    duration: 3,
+    duration: 2,
     scrollTrigger: {
       trigger: triggerElement,
-      start: "top 80%", // ビューポートの80%の位置で開始
-      end: "top 20%", // ビューポートの20%の位置で終了
-      scrub: 1, // スクロールに合わせてアニメーションを調整
     },
   }
 );
