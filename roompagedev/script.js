@@ -11,7 +11,7 @@ gsap.fromTo(
   ".room-image-text-container1",
   {
     x: () => {
-      const element = document.querySelector(".room-image-text-container1");
+      const element = document.querySelector(".two-card-container");
       return centerX - element.offsetWidth / 2;
     },
     opacity: 0,
@@ -31,7 +31,7 @@ gsap.fromTo(
   ".room-image-text-container2",
   {
     x: () => {
-      const element = document.querySelector(".room-image-text-container2");
+      const element = document.querySelector(".two-card-container");
       return -(centerX - element.offsetWidth / 2);
     },
     opacity: 0,
