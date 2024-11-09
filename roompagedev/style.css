@@ -1,9 +1,9 @@
 .room-page-dev {
   padding: 0;
   margin: 0;
+  background: url(./img/oheyadairi.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background: url(./img/oheyadairi.png);
   width: 100%;
   text-align: center;
   display: flex;
