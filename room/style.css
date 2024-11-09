@@ -1,0 +1,349 @@
+:root {
+  --font-family: "Shippori Mincho", sans-serif;
+  --color-white: #ffffff;
+  --color-footer-background: #d7e1dc;
+  --color-blur: rgba(255, 255, 255, 0.1);
+}
+
+/* global */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* ヘッダー */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  height: 75px;
+  padding: 4px 36px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.64) -34%,
+    rgba(0, 0, 0, 0.48) 100%
+  );
+  z-index: 10;
+  position: fixed;
+}
+.header-title {
+  text-decoration: none;
+  margin: 0;
+  width: 100%;
+  color: var(--color-white);
+  font-size: 20px;
+}
+.header-title:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+.header-wrapper {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  color: var(--color-white);
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+.header-contents {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  width: 480px;
+  height: 40px;
+}
+.header-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-white);
+  margin: 0;
+  padding: 9px 16px;
+  width: 100%;
+  font-size: 16px;
+  text-decoration: none;
+}
+.header-link:hover {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  margin: 0;
+  border-radius: 100px;
+  background: var(--color-blur);
+}
+.header-button {
+  font-size: 16px;
+  color: var(--color-white);
+  display: flex;
+  width: 185px;
+  height:40px;
+  padding: 8px 12px;
+  margin: 0;
+  border-radius: 100px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border: 0.5px solid #ffffff;
+}
+.header-button:hover {
+  display: flex;
+  width: 185px;
+  height: 100%;
+  margin: 0;
+  border-radius: 100px;
+  background: var(--color-blur);
+}
+
+.room-headline{
+  width:100%;
+}
+
+/* 見出し */
+.hero-second {
+  width: 100%;
+  height: 632px;
+  background-image: url("./img/room-headline.png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.hero-second::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 317px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.51) 0%,
+    rgba(0, 0, 0, 0.31) 100%
+  );
+  backdrop-filter: blur(1px);
+}
+.hero-second-wrapper {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  padding: 40px 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  z-index: 1;
+  text-align: center;
+}
+.hero-second-title {
+  margin: 0;
+  color: var(--color-white);
+  font-size: 32px;
+}
+.hero-second-texts {
+  margin: 0;
+  color: var(--color-white);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+.room-main-content-container{
+    padding:48px 100px 80px;
+}
+
+/* パンくずリスト */
+.breadcrumb {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px; 
+    display: flex;
+    flex-direction: row;
+  }
+
+  .breadcrumb li{
+    margin:0 8px;
+  }
+  
+  .breadcrumb li a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .breadcrumb li a:hover {
+    text-decoration: none;
+  }
+
+.room-main-content-container{
+    background-image: url('img/maincontents-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  
+ /* コンテンツの中身  */
+  .room-contents-container{
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    gap:80px;
+    padding: 60px 85px 0;
+  }
+
+  .room-headline{
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 46px;
+    margin:0;
+  }
+
+
+  /* 記事 */
+  .room-article{
+    display: flex;
+    align-items: center;
+    gap: 48px;
+  }
+
+  .room-explanation-img-container{
+    display: flex;
+    gap:8px;
+    flex-direction: column;
+  }
+
+  /* 記事の見出し */
+.room-explanation-img{
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(2px);
+}
+
+.room-explanation-paragraph-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.room-explanation-subheadline{
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  margin:20px 0;
+}
+
+.room-explanation-list{
+  margin:0;
+  padding:0;
+}
+
+.room-explanation-listitem{
+    list-style-type: none;
+    border-bottom: 1px solid #DDD;
+}
+.room-explanation-listitem-contents{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  margin:12px 0;
+}
+
+.room-explanation-key{
+  margin:0;
+  white-space: nowrap;
+  width:120px;
+}
+
+.room-explanation-colon{
+  margin:0;
+}
+.room-explanation-value{
+  margin:0;
+  flex:1;
+}
+
+/* footer */
+.footer {
+  display: flex;
+  width: 100%;
+  padding: 32px 0px 20px 0px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color-footer-background);
+}
+.footer-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.logo-info {
+  display: flex;
+  width: 144px;
+  height: 144px;
+  justify-content: center;
+  align-items: center;
+}
+.footer-contents {
+  height: 120px;
+  width: 474px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+.footer-texts {
+  margin: 0;
+  font-size: 16px;
+}
+.coron {
+  margin: 0 8px;
+}
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+  margin:32px 0;
+}
+.footer-logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  position: relative;
+  list-style: none;
+}
+
+.footer-icon:hover{
+  opacity:0.6;
+}
+
+ .footer-info {
+  font-size: 14px;
+  text-align: center;
+  margin:0;
+}
