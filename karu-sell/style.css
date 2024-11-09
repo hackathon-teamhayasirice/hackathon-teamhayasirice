@@ -23,7 +23,7 @@ body {
   font-weight: 400;
   line-height: 46px;
   text-align: center;
-  margin-bottom: 60px;
+  margin: 0 0 55px 0;
 }
 
 .slider {
@@ -72,9 +72,11 @@ body {
 .slick-next {
   right: 4.3%;
 }
-
+.slick-track {
+  padding: 5px;
+}
 .slick-dots {
-  bottom: -42px;
+  bottom: -31px;
 }
 .slick-dots li {
   margin: 0 12px;
@@ -123,6 +125,8 @@ body {
 }
 
 .carousel1-header {
+  margin: 0;
+  padding: 0;
   text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
   font-size: 32px;
   font-style: normal;
@@ -131,6 +135,8 @@ body {
 }
 
 .carousel1-phrase {
+  margin: 0;
+  padding: 0;
   text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
   font-size: 16px;
   font-weight: 400;
