@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hackathon</title>
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -149,6 +150,13 @@
     </section>
     <!-- 周辺観光 -->
 
+    <!-- カレンダー -->
+    <section class="calender">
+      <h2 class="calender-headline">ご予約状況</h2>
+      <p class="calender-paragraph">ご予約可能どうか、お部屋のタイプごとに記載されています。<br/>ご予約はページ下部の番号よりお問い合せください。</p>
+      <div id="calendar"></div>
+    </section>
+
     <!-- footer -->
     <footer class="footer">
       <div class="footer-wrapper">
@@ -201,6 +209,7 @@
       <p class="footer-info">©2024 Kare-naru Hayashi, Inc.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
