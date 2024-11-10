@@ -212,18 +212,15 @@ document.addEventListener("DOMContentLoaded", function () {
 //フッターのアニメーション
 gsap.fromTo(
   ".forest",
-  { y: 0, opacity: 0 }, //初期状態　画面外からスタート
+  { y: 100, opacity: 0 }, //初期状態　画面外からスタート
   {
     opacity: 1,
     y: 0,
     duration: 3,
-    ease: "power2.out",
     scrollTrigger: {
       trigger: ".footer",
-      // start: "top bottom", //要素の底とビューポートが一致した時にトリガー
-      // end: "bottom bottom", //フッターが画面下に触れたら終了
-      // start: "bottom bottom",
-      // end: "top bottom",
+      start: "85% bottom",
+      end: "100% bottom",
       scrub: true, //スクロールに同期
     },
   }

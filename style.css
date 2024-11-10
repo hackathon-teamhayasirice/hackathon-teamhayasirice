@@ -1038,7 +1038,6 @@ body {
   height: 170px;
   margin: 0;
   padding: 0;
-  /* bottom: 0px; */
-  bottom: 0px; /*画面外に配置　*/
+  bottom: 0px;
   opacity: 0;
 }
