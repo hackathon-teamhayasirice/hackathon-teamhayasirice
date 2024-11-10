@@ -208,3 +208,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
   calendar.render();
 });
+
+//フッターのアニメーション
+gsap.from(".forest", {
+  opacity: 0,
+  y: 170,
+  duration: 2,
+  ease: "power4.out",
+  scrollTrigger: {
+    trigger: ".forest",
+    start: "bottom bottom", //要素の底とビューポートが一致した時にトリガー
+  },
+});
