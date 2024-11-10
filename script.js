@@ -210,13 +210,19 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //フッターのアニメーション
-gsap.to(".forest", {
-  opacity: 1,
-  y: -170,
-  duration: 3,
-  ease: "power4.out",
-  scrollTrigger: {
-    trigger: ".forest",
-    start: "bottom bottom", //要素の底とビューポートが一致した時にトリガー
-  },
-});
+gsap.fromTo(
+  ".forest",
+  { y: 170, opacity: 0 }, //初期状態　画面外からスタート
+  {
+    opacity: 1,
+    y: 0,
+    duration: 3,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: ".footer",
+      start: "top bottom", //要素の底とビューポートが一致した時にトリガー
+      end: "bottom bottom", //スクロールに同期
+      scrub: true,
+    },
+  }
+);
