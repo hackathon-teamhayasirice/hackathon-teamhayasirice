@@ -1032,15 +1032,10 @@ body {
   text-align: center;
   margin: 0;
 }
-.animation {
-  width: 100%;
-  height: 170px;
-  margin: 0;
-  padding: 0;
-}
 .forest {
   width: 100%;
   height: 170px;
   margin: 0;
   padding: 0;
+  opacity: 0;
 }

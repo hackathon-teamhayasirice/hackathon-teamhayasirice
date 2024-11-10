@@ -210,10 +210,10 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //フッターのアニメーション
-gsap.from(".forest", {
-  opacity: 0,
-  y: 170,
-  duration: 2,
+gsap.to(".forest", {
+  opacity: 1,
+  y: -170,
+  duration: 3,
   ease: "power4.out",
   scrollTrigger: {
     trigger: ".forest",
